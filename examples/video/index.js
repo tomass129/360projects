@@ -20,13 +20,13 @@ function onLoad() {
   // Load VR View.
   vrView = new VRView.Player('#vrview', {
     width: '100%',
-    height: 480,
+    height: '100%',
     video: 'test3.mp4',
     is_stereo: false,
     //is_debug: true,
     //default_heading: 90,
-    //is_yaw_only: true,
-    //is_vr_off: true,
+    is_yaw_only: false,
+    is_vr_off: true,
   });
   vrView.on('ready', onVRViewReady);
 
